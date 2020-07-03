@@ -139,10 +139,14 @@ footer .sociallinc {
 
 /* Header */
 header {
-  font-size: 14px;
-  line-height: 1.14;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.02em;
+
+  color: #212121;
 }
 
 header .container {
@@ -155,10 +159,10 @@ header a {
   text-decoration: none;
 }
 
-/* address {
+.address {
   display: block;
   font-style: none;
-} */
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -169,32 +173,64 @@ header a {
   letter-spacing: 0.03em;
   margin-right: 85px;
 }
+
 .active {
   color: var(--active-color);
 }
+
 .nav-list {
   display: flex;
 }
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .nav-item a {
   display: block;
   color: var(--additional-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .active a {
   color: var(--active-color);
 }
+
 .nav-item a:hover,
 .nav-item a:focus {
   color: var(--active-color);
 }
+
 .contacts-list {
   display: flex;
-  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
+
+.contacts-list {
+  align-items: center;
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+
+.contacts-list:hover,
+.contacts-list:focus {
+  fill: var(--active-color);
+  color: var(--active-color);
+}
+
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -205,21 +241,16 @@ header a {
   margin-right: 10px;
 }
 
-/* .icon-phone {
-  display: inline-block;
-  margin-right: 10px;
-} */
-
-.address .headericon {
-  align-items: center;
+.headericon {
   color: var(--main-text-color);
-  fill: var(--main-text-color);
+
+  /* transition: color var(--duration) var(--timing); */
 }
 
-.address .headericon:hover,
-.address .headericon:focus {
-  fill: var(--active-color);
-  color: var(--active-color);
+.mailikon,
+.phoneikon {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 /* Footer */
