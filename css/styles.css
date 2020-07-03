@@ -33,14 +33,6 @@ img {
   display: block;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .container {
   width: 1200px;
   margin-top: 0px;
@@ -139,6 +131,10 @@ footer .sociallinc {
 
 /* Header */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
@@ -152,6 +148,16 @@ header .container {
 header a {
   text-decoration: none;
 }
+
+.body {
+  padding-top: 80px;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--additional-text-color);
@@ -530,7 +536,7 @@ footer .social-item:not(:last-child) {
 }
 
 .works-item {
-  /* position: relative; */
+  position: relative;
   display: block;
   width: 370px;
   margin: 15px;
@@ -548,6 +554,21 @@ footer .social-item:not(:last-child) {
 
 .imageportfolio {
   position: relative;
+}
+
+.imageportfolio::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
+.imageportfolio:hover::before {
+  opacity: 1;
 }
 
 .item-description {
@@ -569,7 +590,6 @@ footer .social-item:not(:last-child) {
 }
 
 .item-description:hover {
-  background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
 }
 
@@ -609,5 +629,5 @@ footer .social-item:not(:last-child) {
   width: 100%;
   height: 100%;
   border-radius: 5px 5px 0px 0px;
-  padding: 63px 24px;
+  /* padding: 63px 24px; */
 }
