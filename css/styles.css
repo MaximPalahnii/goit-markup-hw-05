@@ -722,56 +722,8 @@ footer .social-item:not(:last-child) {
   opacity: 1;
 }
 
-/* .imageportfolio {
-  position: relative;
-  overflow: hidden;
-}
-
-.imageportfolio::before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 250ms var(--timing-funktion);
-}
-
-.imageportfolio:hover::before {
-  opacity: 1;
-  transform: translateY(0%);
-}
-
-.item-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-
-  letter-spacing: 156%;
-
-  color: #ffffff;
-} */
-
-/* .item-description:hover {
-  opacity: 1;
-} */
-
 .item-link {
   text-decoration: none;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .item-info {
