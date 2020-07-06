@@ -493,15 +493,12 @@ footer .social-item:not(:last-child) {
 
 /* Wedoit */
 
-.wedoit ul {
+.wedoit {
   list-style-type: none;
-}
-.wedoit a {
   text-decoration: none;
-}
-.wedoit img {
   display: block;
 }
+
 .wedoit-list {
   display: flex;
   justify-content: space-between;
@@ -510,12 +507,13 @@ footer .social-item:not(:last-child) {
   display: block;
   position: relative;
 }
-.wedoit .item-image {
+.wedoit .wedo-image {
   display: block;
   background-color: unset;
 }
 .wedoit .item-title {
   text-align: center;
+  margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 27px;
   color: #ffffff;
@@ -525,8 +523,6 @@ footer .social-item:not(:last-child) {
   position: absolute;
   left: 0px;
   bottom: 0px;
-
-  margin: 0 auto;
 }
 
 /* Team */
@@ -700,7 +696,8 @@ footer .social-item:not(:last-child) {
     opacity 250ms var(--timing-funktion);
 }
 
-.item-link:hover .overlay-description {
+.item-link:hover .overlay-description,
+.item-link:focus .overlay-description {
   transform: translateY(0);
   opacity: 1;
 }
@@ -720,10 +717,6 @@ footer .social-item:not(:last-child) {
 .item-link:hover .item-description,
 .item-link:focus .item-description {
   opacity: 1;
-}
-
-.item-link {
-  text-decoration: none;
 }
 
 .item-info {
