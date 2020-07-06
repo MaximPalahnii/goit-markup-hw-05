@@ -7,7 +7,7 @@
   --additional-text-color: #212121;
   --active-color: #2196f3;
   --footer-background-color: #2f303a;
-  --timing-funktion: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  --timing-funktion: cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
   box-sizing: border-box;
@@ -206,10 +206,6 @@ header a {
   background-color: var(--active-color);
 
   border-radius: 2px;
-  /* transform: scaleX(0);
-  opacity: 1;
-  transition: transform 250ms var(--timing-funktion),
-    opacity 250ms var(--timing-funktion); */
 }
 
 .nav-list {
@@ -230,34 +226,6 @@ header a {
   display: block;
   text-decoration: none;
 }
-
-/* .nav-linc::after {
-  content: "";
-
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-
-  width: 100%;
-  height: 4px;
-  color: var(--active-color);
-  background-color: var(--active-color);
-
-  border-radius: 2px;
-  transform: scaleX(0);
-  opacity: 0;
-  transition: transform 250ms var(--timing-funktion),
-    opacity 250ms var(--timing-funktion);
-}
-
-.nav-linc:hover::after,
-.nav-linc:focus::after {
-  opacity: 1;
-  transform: scaleX(1);
-  color: var(--active-color);
-  background-color: var(--active-color);
-} */
 
 .nav-item .nav-linc {
   display: block;
